@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercícios JavaScript</title>
+</head>
+
+<body>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    label {
+      margin-bottom: 5px;
+    }
+
+    input {
+      height: 30px;
+      width: 120px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-bottom: 10px;
+      padding: 5px;
+    }
+
+    .btncalcular {
+      height: 40px;
+      width: 120px;
+      font-size: 1rem;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .btncalcular:hover {
+      background-color: #45a049;
+    }
+
+    .valorfinal {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+  </style>
+
+  <label for="custoFabrica">Custo de fábrica:</label>
+  <input type="number" name="custoFabrica" id="custoFabrica">
+  <br><br>
+  <label for="percDistribuidor">Percentual do distribuidor:</label>
+  <input type="number" name="percDistribuidor" id="percDistribuidor">
+  <br><br>
+  <label for="percImpostos">Percentual de impostos:</label>
+  <input type="number" name="percImpostos" id="percImpostos">
+  <br><br>
+  <button class="btncalcular">Calcular</button>
+  <p>Resultado: <span class="valorfinal"></span></p>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
